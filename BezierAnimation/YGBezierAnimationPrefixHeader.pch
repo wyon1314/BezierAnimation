@@ -1,0 +1,29 @@
+
+//
+//  YGBezierAnimationPrefixHeader.pch
+//  BezierAnimation
+//
+//  Created by 酷星 on 2016/11/22.
+//  Copyright © 2016年 wyon. All rights reserved.
+//
+
+#ifndef YGBezierAnimationPrefixHeader_pch
+#define YGBezierAnimationPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Masonry.h"
+
+
+#define SCREEN_WIDTH  [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+#define UIColorFromRGBA(rgbValue, alphaValue) \
+[UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0x0000FF))/255.0 \
+alpha:alphaValue]
+
+#endif /* YGBezierAnimationPrefixHeader_pch */
