@@ -43,6 +43,8 @@
     }];
     [self.view addSubview:_countdownView];
     
+    
+    
     self.recordView = [[YGRecordVideoButtonView alloc] initWithFrame:CGRectMake(250, 200, 50, 50)
                                                                         defaultLineWidth:2.0
                                                                         defaultLineColor:[UIColor whiteColor]
